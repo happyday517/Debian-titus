@@ -44,14 +44,14 @@ nala install neofetch flameshot psmisc mangohud vim lxappearance papirus-icon-th
 
 # Download Nordic Theme
 cd /usr/share/themes/
-git clone https://github.com/EliverLara/Nordic.git
+git clone https://ghproxy.com/https://github.com/EliverLara/Nordic.git
 
 # Installing fonts
 cd $builddir 
 nala install fonts-font-awesome
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+wget https://ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
 unzip FiraCode.zip -d /home/$username/.fonts
-wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
+wget https://ghproxy.com/https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/Meslo.zip
 unzip Meslo.zip -d /home/$username/.fonts
 mv dotfonts/fontawesome/otfs/*.otf /home/$username/.fonts/
 chown $username:$username /home/$username/.fonts/*
@@ -62,7 +62,7 @@ fc-cache -vf
 rm ./FiraCode.zip ./Meslo.zip
 
 # Install Nordzy cursor
-git clone https://github.com/alvatip/Nordzy-cursors
+git clone https://ghproxy.com/https://github.com/alvatip/Nordzy-cursors
 cd Nordzy-cursors
 ./install.sh
 cd $builddir
